@@ -78,7 +78,7 @@ export default function App() {
       let botResponse = '';
 
       if (inputText.toLowerCase().includes('how are you')) {
-        botResponse = "I'm doing great, thank you! How about you? 😊";
+        botResponse = "I'm doing great, thank you! 😊";
       }
 
       else if (messages.length === 1) {
