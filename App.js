@@ -77,7 +77,11 @@ export default function App() {
 
       let botResponse = '';
 
-      if (messages.length === 1) {
+      if (inputText.toLowerCase().includes('how are you')) {
+        botResponse = "I'm doing great, thank you! How about you? 😊";
+      }
+
+      else if (messages.length === 1) {
         botResponse = greetings[Math.floor(Math.random() * greetings.length)];
       }
       else if (inputText.toLowerCase().includes('bye') ||
